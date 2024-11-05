@@ -11,5 +11,5 @@ devDependencies:
   typescript: ^4
 scripts:
   build: >-
-    prettier --write *.html *.tsx tsconfig.json && pnpm tsc && pnpm esbuild
+    prettier --write *.html *.tsx tsconfig.json .github/workflows/publish.yaml && pnpm tsc && pnpm esbuild
     --bundle main.js --outfile=index.js
