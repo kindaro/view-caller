@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: build
-        run: pnpm build
+        run: npm build
       - name: copy
         run: |
           mkdir '_site'
