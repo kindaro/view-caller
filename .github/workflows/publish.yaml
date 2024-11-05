@@ -8,8 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+    steps:
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ^9
+        run_install: true
       - name: build
-        run: npm run build
+        run: pnpm build
       - name: copy
         run: |
           mkdir '_site'
